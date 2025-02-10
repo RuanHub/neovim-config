@@ -51,6 +51,7 @@ require('lazy').setup({
   require 'custom.plugins.lualine', -- Status bar.
   require 'custom.plugins.scrollbar', -- Plugin to show location of events in scrollbar.
   require 'custom.plugins.toggleterm', -- Plugin to show location of events in scrollbar.
+  require 'custom.plugins.diffview', -- Plugin to view diffs
 
   -- Highlight todo, notes, etc in comments
   { 'folke/todo-comments.nvim', event = 'VimEnter', dependencies = { 'nvim-lua/plenary.nvim' }, opts = { signs = false } },
