@@ -24,6 +24,19 @@ vim.keymap.set('n', '<C-l>', '<C-w><C-l>', { desc = 'Move focus to the right win
 vim.keymap.set('n', '<C-j>', '<C-w><C-j>', { desc = 'Move focus to the lower window' })
 vim.keymap.set('n', '<C-k>', '<C-w><C-k>', { desc = 'Move focus to the upper window' })
 
+-- Keybinds to make split navigation easier.
+--  Use ALT+<hl> to switch between tabs
+--  Use ALT+<t> to open a new tab
+vim.keymap.set('n', '<A-h>', ':tabprevious<CR>', { desc = 'Move focus to the left tab' })
+vim.keymap.set('n', '<A-l>', ':tabnext<CR>', { desc = 'Move focus to the right tab' })
+vim.keymap.set('n', '<A-t>', ':tabnew<CR>', { desc = 'Open a new tab' })
+
+-- Set tab width to 4 spaces
+vim.opt.tabstop = 4 -- Width of tab character
+vim.opt.softtabstop = 4 -- Fine-tunes the amount of whitespace to be added
+vim.opt.shiftwidth = 4 -- Width for autoindents
+vim.opt.expandtab = true -- Converts tabs to spaces
+
 -- Open the file explorrer
 vim.keymap.set('n', '<leader>pv', vim.cmd.Ex)
 
