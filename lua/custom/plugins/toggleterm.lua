@@ -9,7 +9,7 @@ return {
         open_mapping = [[<c-\>]], -- default key mapping to toggle the terminal
         shade_filetypes = {},
         shade_terminals = true,
-        shading_factor = '1', -- the degree by which to darken the terminal background
+        shading_factor = '-80', -- the degree by which to darken the terminal background
         start_in_insert = true,
         insert_mappings = true,
         persist_size = true,
