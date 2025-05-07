@@ -4,7 +4,6 @@ return {
     version = '*',
     config = function()
       require('toggleterm').setup {
-        shell = 'pwsh.exe',
         size = 20, -- default size of the terminal
         open_mapping = [[<c-\>]], -- default key mapping to toggle the terminal
         shade_filetypes = {},
