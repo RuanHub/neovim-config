@@ -47,3 +47,10 @@ vim.keymap.set('x', '<A-k>', ":m '<-2<CR>gv=gv", { desc = 'Move selected one lin
 -- Usefull code snipets.
 vim.keymap.set('v', '<leader>l', 'y<esc>oconsole.log("<c-r>0: ", <c-r>0);<esc>', { desc = '[L]og selected', silent = true })
 vim.keymap.set('n', '<leader>sue', 'ouseEffect(() => {<CR>}, []);<Esc>O', { desc = '[S]nippet useEffect', silent = true })
+vim.keymap.set('v', '<leader>bm', 'd<esc>Oconsole.time("Benchmark");<cr>console.timeEnd("Benchmark");<esc>P<esc>', {
+  desc = '[B]ench[M]ark selected code',
+  silent = true,
+})
+
+-- errorpopus
+vim.keymap.set('n', '<leader>e', vim.diagnostic.open_float, { desc = '[S]nippet useEffect', silent = true })
