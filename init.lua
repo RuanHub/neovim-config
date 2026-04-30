@@ -54,6 +54,7 @@ require('lazy').setup({
   require 'custom.plugins.diffview', -- Plugin to view diffs
   require 'custom.plugins.octo', -- Plugin to interface with github
   require 'custom.plugins.noice', -- Plugin to display commands and notices prettier
+  require 'custom.plugins.tabby', -- Plugin to display tabs prettier
 
   -- Highlight todo, notes, etc in comments
   { 'folke/todo-comments.nvim', event = 'VimEnter', dependencies = { 'nvim-lua/plenary.nvim' }, opts = { signs = false } },
